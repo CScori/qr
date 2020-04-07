@@ -206,6 +206,7 @@ p.lead {
 @media only screen and (max-width: 800px) {
     p.lead {
         font-size: 1.8rem;
+        width: 400px;
     }
 }
 
@@ -1514,6 +1515,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
     padding: 0;
     left: 50px;
     top: 50%;
+    border-radius: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -2205,10 +2207,21 @@ html.no-csstransitions .home-content__main {
 
 .about-content {
     margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
 }
 .box-head {
     display: flex;
+    justify-content: space-evenly;
     margin: auto;
+}
+.box {
+    padding: 0 30px;
+}
+.box2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 
@@ -2293,11 +2306,29 @@ html.no-csstransitions .home-content__main {
 }
 
 @media only screen and (max-width: 900px) {
-    .about-content .left {
-        padding-right: 20px;
+
+    .about-content {
+        margin-bottom: 1.5rem;
+        display: flex;
+        flex-direction: column;
     }
-    .about-content .right {
-        padding-left: 20px;
+    .box-head {
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+    .box {
+        width: 350px;
+        padding: 0 50px;
+        margin: 0 15px;
+    }
+    .timeline__block {
+        max-width: 800px;
+        padding-left: 8rem;
+        min-height: 28.8rem;
+    }
+    .timeline__desc {
+        max-width: 880px;
     }
 }
 
@@ -2305,38 +2336,30 @@ html.no-csstransitions .home-content__main {
     .about-content {
         max-width: 600px;
     }
-    .about-content .left {
-        padding-right: 15px;
-    }
-    .about-content .right {
-        padding-left: 15px;
-    }
-    .about-content .right .timeline {
-        margin-top: 0;
-    }
-    .about-content .left > h3, .about-content .right > h3 {
-        text-align: center;
-    }
+    
 }
 
 @media only screen and (max-width: 600px) {
-    .about-content .left {
-        padding-right: 10px;
+    .about-content {
+        max-width: 500px;
     }
-    .about-content .right {
-        padding-left: 10px;
+    .box-head {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .box {
+        margin-bottom: 2rem;
     }
     .timeline__block {
         padding-left: 6rem;
     }
+  
 }
 
 @media only screen and (max-width: 400px) {
-    .about-content .left {
-        padding-right: 0;
-    }
-    .about-content .right {
-        padding-left: 0;
+    .about-content {
+        max-width: 300px;
     }
     .timeline__block {
         padding-left: 5.5rem;
