@@ -378,7 +378,7 @@ ul.disc li::before {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: #862121;
+    background: #08e8f8;
     position: absolute;
     left: -17px;
     top: 11px;
@@ -387,7 +387,7 @@ ul.disc li::before {
 
 dt {
     margin: 0;
-    color: #862121;
+    color: #08e8f8;
 }
 
 dd {
@@ -518,7 +518,9 @@ form,
 }
 
 .pace .pace-progress {
-    background: #862121;
+    background: #08e8f8;
+    position: fixed;
+    z-index: 900;;
     position: fixed;
     z-index: 900;
     top: 0;
@@ -563,7 +565,7 @@ form,
     margin-left: -30px;
     margin-top: -30px;
     padding: 0;
-    background-color: #862121;
+    background-color: #08e8f8;
     border-radius: 100%;
     -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
     animation: sk-scaleout 1.0s infinite ease-in-out;
@@ -831,8 +833,8 @@ button.btn--primary:focus,
 input[type="submit"].btn--primary:focus, 
 input[type="reset"].btn--primary:focus, 
 input[type="button"].btn--primary:focus {
-    background: #862121;
-    border-color: #862121;
+    background: #08e8f8;
+    border-color: #08e8f8;
 }
 
 
@@ -861,8 +863,8 @@ input[type="button"].btn--primary:focus {
 }
 
 .btn--stroke:hover, button.btn--stroke:hover {
-    border: 0.3rem solid #862121;
-    color: #862121;
+    border: 0.3rem solid #08e8f8;
+    color: #08e8f8;
 }
 
 .btn--pill, button.btn--pill {
@@ -2862,7 +2864,7 @@ html.no-csstransitions .home-content__main {
     padding: 0 2rem;
     margin: 0;
     color: #FFFFFF;
-    background: #862121;
+    background: #08e8f8;
 }
 
 .s-contact .form-field label::after {
@@ -2873,7 +2875,7 @@ html.no-csstransitions .home-content__main {
     margin-top: -6px;
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
-    border-right: 5px solid #862121;
+    border-right: 5px solid #08e8f8;
 }
 
 .contact__main {
@@ -3078,7 +3080,7 @@ footer {
 }
 
 footer a, footer a:visited {
-    color: #862121;
+    color: #08e8f8;
 }
 
 footer a:hover, footer a:focus {
